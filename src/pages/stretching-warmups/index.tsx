@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
-import { getCardioWarmups, getStretchingWarmups } from "../../utils/api";
+import { getStretchingWarmups } from "../../utils/api";
 import Spinner from "../../components/spinner";
 import Error from "../../components/error";
 
