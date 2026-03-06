@@ -74,14 +74,14 @@ export default function StretchingWarmups() {
       )}
       <div className="flex items-center py-8 gap-2 justify-center w-full">
         <button
-          className="bg-slate-100 hover:bg-slate-500 transition w-30 text-green-800 border hover:text-slate-100 py-2 rounded-lg disabled:text-gray-200"
+          className="bg-slate-100 hover:bg-slate-500 transition w-30 text-green-800 border hover:text-slate-100 py-2 rounded-lg disabled:text-gray-200 disabled:hover:bg-slate-100"
           onClick={() => (page === 1 ? page : setPage(page - 1))}
           disabled={page === 1}
         >
           Previous
         </button>
         <button
-          className="bg-slate-100 hover:bg-slate-500 transition w-30 text-green-800 border hover:text-slate-100 py-2 rounded-lg disabled:text-gray-200"
+          className="bg-slate-100 hover:bg-slate-500 transition w-30 text-green-800 border hover:text-slate-100 py-2 rounded-lg disabled:text-gray-200 disabled:hover:bg-slate-100"
           onClick={() => (page >= 1 ? setPage(page + 1) : page)}
           disabled={stretching.length <= 0}
         >
